@@ -153,27 +153,6 @@ replayButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-/* ---------- Gentle 3D cards ---------- */
-
-document.querySelectorAll(".tilt-card").forEach((card) => {
-  card.addEventListener("mousemove", (event) => {
-    if (window.matchMedia("(pointer: coarse)").matches) return;
-
-    const rect = card.getBoundingClientRect();
-    const x = (event.clientX - rect.left) / rect.width;
-    const y = (event.clientY - rect.top) / rect.height;
-
-    const rotateY = (x - 0.5) * 7;
-    const rotateX = (0.5 - y) * 7;
-
-    card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-  });
-
-  card.addEventListener("mouseleave", () => {
-    card.style.transform = "";
-  });
-});
-
 /* ---------- Falling hearts ---------- */
 
 function createHeartBurst(amount = 16) {
