@@ -5,7 +5,7 @@
 
 const CONFIG = {
   recipient: "Someone Special",
-  sender: "Your Name",
+  sender: "Berns",
 
   // Change this to anything you want.
   secretMessage:
