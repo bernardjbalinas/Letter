@@ -4,7 +4,7 @@
    ========================================================= */
 
 const CONFIG = {
-  recipient: "Someone Special",
+  recipient: "Eya",
   sender: "Berns",
 
   // Change this to anything you want.
